@@ -18,21 +18,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <repositories>
-        <repository>
-            <id>jitpack</id>
-            <url>https://jitpack.io</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-
-
     <dependencies>
+        <dependency>
+            <groupId>com.raphael</groupId>
+            <artifactId>testApp-model</artifactId>
+            <version>${project.version}</version> <!-- don't need to put actual version when doing
+            versions between sibling modules -->
+        </dependency>
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
