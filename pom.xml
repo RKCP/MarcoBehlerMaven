@@ -17,7 +17,20 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-<!--    <repositories>-->
+<!--    DistributionManagement sets up the repository (repo) we want to deploy to -->
+    <distributionManagement>
+        <repository>
+            <id>artifact-repository</id>
+            <url>{your.url}</url>
+        </repository>
+    </distributionManagement>
+
+<!--    scm section defines the git repo (and tag) for the code -->
+    <scm>
+        <connection>scm:git:your-git-repo-url</connection>
+    </scm>
+
+    <!--    <repositories>-->
 <!--        <repository>-->
 <!--            <id>jitpack</id>-->
 <!--            <url>https://jitpack.io</url>-->
